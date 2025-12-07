@@ -13,6 +13,9 @@
     "url": "https://github.com/gragris/SimitCalcV2.git"
   },
   "build": {
+    "publish": [
+      "github"
+    ],
     "appId": "com.simitcalc.app",
     "productName": "SimitCalc",
     "mac": {

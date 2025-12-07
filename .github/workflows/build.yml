@@ -1,5 +1,4 @@
-# Workflow Updated for Fix
-name: Build and Release
+name: Build Mac
 
 on:
   push:
@@ -10,12 +9,8 @@ permissions:
   contents: write
 
 jobs:
-  build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest]
+  build-mac:
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Code
